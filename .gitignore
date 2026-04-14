@@ -1,0 +1,4 @@
+virt/
+venv/
+env/
+.DS_Store

@@ -92,8 +92,8 @@ DATABASES = {
     #     'PASSWORD': 'Coco.vin12',
     #     'HOST': 'localhost'
     # } nees to be chnaged because the database is loclhost 
-    'default': dj_database_url.config(default=os.environ.get("DATABASE_URL"))
-
+   
+    'default': dj_database_url.config(default=os.environ.get("DATABASE_URL")),
 
 }
 
@@ -137,7 +137,7 @@ USE_TZ = True
 STATIC_URL = 'static/'
 # user folder mapping
 STATICFILES_DIRS = [
-BASE_DIR / STATIC_URL,
+    BASE_DIR / STATIC_URL,
 ]
 if not DEBUG:
     # django internal mapping 
